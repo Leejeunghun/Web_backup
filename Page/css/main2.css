@@ -1,0 +1,29 @@
+#s1{
+  position:absolute;
+  right: 400px;
+  top:1px;
+}
+#s2{
+  position:absolute;
+  right: 200px;
+  top:1px;
+}
+
+#s3{
+  position:absolute;
+  right: 50px;
+  top:30px
+}
+
+#s4{
+  position:absolute;
+  right: 20px;
+  top:50px
+}
+
+body {
+        height: 400px;
+        background-image: url( "./background.jpg" );
+        background-repeat: no-repeat;
+        background-position: center center;
+}

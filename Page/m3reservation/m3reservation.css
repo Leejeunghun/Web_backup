@@ -1,0 +1,15 @@
+#m3reservation_title .title {font-size:12pt; font-weight:1000; font-family:verdana; letter-spacing:-1px; color:#AAA;}
+#reservation {border-collapse:collapse;}
+#reservation th {width:180px; border:solid 1px #DDD; vertical-align:top; padding:5px; text-align:center; font-weight:1000; }
+#reservation td {width:180px; height:70px; border:solid 1px #DDD; vertical-align:top; padding:5px; text-align:left;}
+#reservation td a {color:#333;}
+#reservation td .lunar {font-size:8pt; color:#AAA;}
+#reservation td .official {font-size:8pt; color:#F99;}
+#reservation td .special {font-size:8pt; color:#99F;}
+#reservation td .reserve {font-size:8pt; color:#666;}
+#reservation .today { background-color: #EFF; }
+.m3tbl {border-collapse:collapse; width:350px;}
+.m3tbl td {border:solid 1px #AAA; padding:3px 7px;}
+.m3tbl .lh {background-color:#DDF; text-align:center; font-weight:700; }
+.pale { color:#999; }
+.align_c { text-align:center;}

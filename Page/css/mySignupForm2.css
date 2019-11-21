@@ -1,0 +1,9 @@
+
+body {
+        height: 400px;
+        border: 1px solid #cccccc;
+        background-image: url( "../member/img/inu.jpg" );
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: rgba(255,255,255,0.5);
+}
