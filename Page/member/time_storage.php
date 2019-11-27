@@ -22,8 +22,15 @@
         <a class="nav-link" href="./time_storage.php">예약 신청<span class="sr-only">(current)</span></a>
       </li>
       </li>
+     <li class="nav-item">
+        <a class="nav-link" href="./allreserve.php"> 사용 현황 </a>
+      </li>
       <li class="nav-item active">
-        <a class="nav-link" href="./reserve.php">나의 예약 현황<span class="sr-only">(current)</span></a>
+	<a class="nav-link" href="./reserve.php">나의 예약 현황<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="./index_QR.php">QR코드 생성</a>
       </li>
       <li class="nav-item active">
       </li>

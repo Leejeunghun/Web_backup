@@ -29,7 +29,7 @@
             <div class="line">
                 <p>아이디</p>
                 <div class="inputArea">
-                    <input type="text" name="memberId" class="memberId" />
+                    <input type="text" name="memberId" class="memberId" value="Ese" />
                 </div>
                 <div class="memberIdCheck">중복 확인</div>
                 <div class="memberIdComment comment"></div>
@@ -37,40 +37,40 @@
             <div class="line">
                 <p>이름</p>
                 <div class="inputArea">
-                    <input type="text" name="memberName" class="memberName" />
+                    <input type="text" name="memberName" class="memberName" value="인천대">
                 </div>
             </div>
             <div class="line">
                 <p>비밀번호</p>
                 <div class="inputArea">
-                    <input type="password" name="memberPw" class="memberPw" />
+                    <input type="password" name="memberPw" class="memberPw" value="1234" />
                 </div>
             </div>
             <div class="line">
                 <p>비밀번호 확인</p>
                 <div class="inputArea">
-                    <input type="password" name="memberPw2" class="memberPw2"  />
+                    <input type="password" name="memberPw2" class="memberPw2" value="1234" />
                     <div class="memberPw2Comment comment"></div>
                 </div>
             </div>
             <div class="line">
                 <p>냉장고 번호</p>
                 <div class="inputArea">
-                    <input type="text" name="memberNickName" class="memberNickName"  />
+                    <input type="text" name="memberNickName" class="memberNickName"   value="1"/>
                     <div class="memberNickNameComment comment"></div>
                 </div>
             </div>
             <div class="line">
                 <p>이메일</p>
                 <div class="inputArea">
-                    <input type="text" name="memberEmailAddress" class="memberEmailAddress" />
+                    <input type="text" name="memberEmailAddress" class="memberEmailAddress"  value="dlwjdgnsdla@naver.com"/>
                     <div class="memberEmailAddressComment comment"></div>
                 </div>
             </div>
             <div class="line">
                <p>냉장고 암호</p>
                <div class="inpsutArea">
-                   <input type="text" name="memberBirthDay" class="memberBirthDay" />
+                   <input type="text" name="memberBirthDay" class="memberBirthDay"  placeholder="1234"/>
                    <div class="memberBirthDayComment comment"></div>
                </div>
            </div>

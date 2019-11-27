@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<head><meta http-equiv="Content-Type" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0;  charset=utf-8"></head>
 <head>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
   <header>
@@ -21,7 +19,7 @@
       <li class="nav-item" id="s4">
         <a class="nav-link" href="./signUpForm.php">회원가입 하기</a>
       </li>
-        <form name="singIn" action="./signIn.php" method="post" onsubmit="return checkSubmit()">
+        <form name="singIn" action="./websignIn.php" method="post" onsubmit="return checkSubmit()">
       <div class="line" id="s1">
           <p>아이디</p>
           <div class="inputArea">
@@ -43,6 +41,5 @@
   </div>
 </nav>
 </header>
-   <img src="http://www.heerim.com/assets/attach/project/%C0%CE%C3%B5%B4%EB%BC%DB%B5%B5%C4%B7%C6%DB%BD%BA_1920%20%283%29.jpg" alt="INU" height="655px" width="1535px">
-   </body>
+</body>
 </html>

@@ -23,7 +23,6 @@
       <li class="nav-item">
         <a class="nav-link" href="./reserve.php">나의 예약 현황</a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link" href="./index_QR.php">QR코드 생성</a>
       </li>
@@ -39,12 +38,10 @@
 <style>
   table {
     width: 100%;
-    border: 2px solid #444444;
+    border: 1px solid #444444;
   }
   th, td {
     border: 1px solid #444444;
-    font-weight: 900;
-
   }
 </style>
 <?php
@@ -56,23 +53,20 @@ $check_insert =0;
 $memberId = $_COOKIE["cookie"];
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-    $time_check = "SELECT * FROM item_now";
+    $time_check = "SELECT * FROM item";
     $result = $conn->query($time_check);
-    echo "<table>";
+    echo "<table border='2'>";
     echo "<tr><td> 사용자 </td><td> 사용상태 </td><td>시간</td> </tr>";
     if ($result->num_rows > 0)
      {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        if( $row[User]==$memberId)
-        {
-        echo "<tr><td> $row[User]</td><td> $row[item]</td> <td>$row[time] </td> </tr>";
-        }
+        
+        echo "<tr><td> $row[User]</td><td> $row[Door_status]</td> <td>$row[time] </td> </tr>";
+        
       }
     }
     echo "</table>";
-
-
 $conn->close();
 ?>
 </head>

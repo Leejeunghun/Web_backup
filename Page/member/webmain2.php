@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
 <head>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="../css/main2.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0; charset=utf-8"></head>
+<head>
 </head>
 <body>
   <header>
@@ -27,7 +26,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="./index_QR.php">QR코드 생성</a>
+        <a class="nav-link" href="./webindex_QR.php">QR코드 생성</a>
       </li>
           <form name="singOut" action="./signOut.php" method="ses_userid" onsubmit="return checkSubmit()">
           <div class="line1" id="s3">
@@ -39,6 +38,24 @@
   </div>
 </nav>
 </header>
-   <img src="http://www.heerim.com/assets/attach/project/%C0%CE%C3%B5%B4%EB%BC%DB%B5%B5%C4%B7%C6%DB%BD%BA_1920%20%283%29.jpg" alt="INU" height="655px" width="1535px">
+DOOR Control:
+         <form method="get" action="webmain2.php">
+                 <input type="submit" value="ON" name="on">
+                 <input type="submit" value="OFF" name="off">
+         </form>
+  <?php
+         shell_exec("gpio -g mode 21 out");
+         if(isset($_GET['on'])){
+                 shell_exec("gpio -g write 21 1");
+     echo "Door  Open";
+    
+         }
+         else if(isset($_GET['off'])){
+     shell_exec("gpio -g write 21 0");
+     echo "Door Close ";
+     
+         }
+         ?>
 </body>
+
 </html>
